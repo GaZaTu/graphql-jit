@@ -61,6 +61,7 @@
     "@gazatu/graphql": ">=15"
   },
   "devDependencies": {
+    "@gazatu/graphql": "^16.8.0",
     "@graphql-tools/schema": "^10.0.0",
     "@stryker-mutator/core": "^7.1.1",
     "@stryker-mutator/jest-runner": "^7.1.1",
@@ -81,14 +82,12 @@
     "codecov": "^3.8.2",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
-    "@gazatu/graphql": "^16.8.0",
     "jest": "^29.7.0",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@graphql-typed-document-node/core": "^3.2.0",
     "fast-json-stringify": "^5.8.0",
     "generate-function": "^2.3.1",
     "lodash.memoize": "^4.1.2",

@@ -1,4 +1,3 @@
-import { TypedDocumentNode } from "@graphql-typed-document-node/core";
 import fastJson from "fast-json-stringify";
 import genFn from "generate-function";
 import {
@@ -215,7 +214,7 @@ export function compileQuery<
   TVariables = { [key: string]: any }
 >(
   schema: GraphQLSchema,
-  document: TypedDocumentNode<TResult, TVariables>,
+  document: DocumentNode,
   operationName?: string,
   partialOptions?: Partial<CompilerOptions>
 ): CompiledQuery<TResult, TVariables> | ExecutionResult<TResult> {
