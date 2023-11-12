@@ -17,7 +17,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isAsyncIterable, isCompiledQuery } from "../execution";
 
 type Email = {

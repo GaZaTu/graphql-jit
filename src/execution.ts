@@ -29,11 +29,11 @@ import {
   Kind,
   locatedError,
   TypeNameMetaFieldDef
-} from "graphql";
-import { ExecutionContext as GraphQLContext } from "graphql/execution/execute";
-import { pathToArray } from "graphql/jsutils/Path";
-import { FieldNode, OperationDefinitionNode } from "graphql/language/ast";
-import { GraphQLTypeResolver } from "graphql/type/definition";
+} from "@gazatu/graphql";
+import { ExecutionContext as GraphQLContext } from "@gazatu/graphql/execution/execute";
+import { pathToArray } from "@gazatu/graphql/jsutils/Path";
+import { FieldNode, OperationDefinitionNode } from "@gazatu/graphql/language/ast";
+import { GraphQLTypeResolver } from "@gazatu/graphql/type/definition";
 import {
   addPath,
   Arguments,

@@ -11,8 +11,8 @@ import {
   parse,
   GraphQLInt,
   versionInfo
-} from "graphql";
-import { buildExecutionContext } from "graphql/execution/execute";
+} from "@gazatu/graphql";
+import { buildExecutionContext } from "@gazatu/graphql/execution/execute";
 import { compileQuery } from "../index";
 import { queryToJSONSchema } from "../json";
 import { makeExecutableSchema } from "@graphql-tools/schema";

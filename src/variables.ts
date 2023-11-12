@@ -18,7 +18,7 @@ import {
   typeFromAST,
   valueFromAST,
   VariableDefinitionNode
-} from "graphql";
+} from "@gazatu/graphql";
 import { addPath, computeLocations, ObjectPath } from "./ast";
 import { GraphQLError as GraphQLJITError } from "./error";
 import createInspect from "./inspect";
@@ -383,20 +383,6 @@ function generateInput(
         )}
       `);
     }
-
-    gen(`
-      const allowedFields = ${JSON.stringify(allowedFields)};
-      for (const fieldName of Object.keys(${currentInput})) {
-        if (!allowedFields.includes(fieldName)) {
-          errors.push(new GraphQLJITError('Variable "$${varName}" got invalid value ' +
-            inspect(${currentInput}) + "; " +
-            'Field "' + fieldName + '" is not defined by type ${
-              varType.name
-            }.', ${errorLocation}));
-          break;
-        }
-      }
-    }`);
   } else {
     /* istanbul ignore next line */
     throw new Error(`unknown type: ${varType}`);

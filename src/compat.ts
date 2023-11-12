@@ -4,16 +4,16 @@ import {
   versionInfo,
   FieldNode,
   GraphQLField
-} from "graphql";
-import { GraphQLObjectType } from "graphql/type/definition";
-import { Maybe } from "graphql/jsutils/Maybe";
+} from "@gazatu/graphql";
+import { GraphQLObjectType } from "@gazatu/graphql/type/definition";
+import { Maybe } from "@gazatu/graphql/jsutils/Maybe";
 
-import { ASTNode, OperationDefinitionNode } from "graphql/language/ast";
-import * as errorUtilities from "graphql/error";
-import * as utilities from "graphql/utilities";
-import { GraphQLFormattedError } from "graphql/error";
+import { ASTNode, OperationDefinitionNode } from "@gazatu/graphql/language/ast";
+import * as errorUtilities from "@gazatu/graphql/error";
+import * as utilities from "@gazatu/graphql/utilities";
+import { GraphQLFormattedError } from "@gazatu/graphql/error";
 import { CompilationContext } from "./execution";
-import * as execute from "graphql/execution/execute";
+import * as execute from "@gazatu/graphql/execution/execute";
 
 /**
  * A helper file to support backward compatibility for different versions of graphql-js.

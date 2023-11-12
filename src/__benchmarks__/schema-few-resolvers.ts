@@ -8,7 +8,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 
 export function schema() {
   const BlogImage = new GraphQLObjectType({

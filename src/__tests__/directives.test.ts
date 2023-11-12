@@ -3,7 +3,7 @@
  */
 
 import { makeExecutableSchema } from "@graphql-tools/schema";
-import { parse } from "graphql";
+import { parse } from "@gazatu/graphql";
 import { CompilerOptions, isCompiledQuery } from "../execution";
 import { compileQuery } from "../index";
 

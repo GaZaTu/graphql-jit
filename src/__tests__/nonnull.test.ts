@@ -9,7 +9,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery } from "../index";
 
 const syncError = new Error("sync");

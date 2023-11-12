@@ -1,5 +1,5 @@
 import { GraphQLExecutor } from "apollo-server-core";
-import { GraphQLSchema } from "graphql";
+import { GraphQLSchema } from "@gazatu/graphql";
 import LRU from "tiny-lru";
 import {
   CompiledQuery,

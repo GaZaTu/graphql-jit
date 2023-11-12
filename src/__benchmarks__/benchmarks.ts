@@ -7,7 +7,7 @@ import {
   getIntrospectionQuery,
   GraphQLSchema,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isCompiledQuery, isPromise } from "../execution";
 import {
   query as fewResolversQuery,

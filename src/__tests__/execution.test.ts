@@ -16,7 +16,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { CompiledQuery, compileQuery, isCompiledQuery } from "../execution";
 
 function executeArgs(args: any) {

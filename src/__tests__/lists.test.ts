@@ -13,7 +13,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isCompiledQuery } from "../index";
 
 // resolved() is shorthand for Promise.resolve()

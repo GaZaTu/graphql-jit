@@ -11,7 +11,7 @@ import {
   GraphQLString,
   NameNode,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery } from "../index";
 
 function executeQuery(

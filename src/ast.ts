@@ -27,9 +27,9 @@ import {
   valueFromASTUntyped,
   ValueNode,
   VariableNode
-} from "graphql";
-import { Kind, SelectionNode, TypeNode } from "graphql/language";
-import { isAbstractType } from "graphql/type";
+} from "@gazatu/graphql";
+import { Kind, SelectionNode, TypeNode } from "@gazatu/graphql/language";
+import { isAbstractType } from "@gazatu/graphql/type";
 import { CompilationContext, GLOBAL_VARIABLES_NAME } from "./execution";
 import createInspect from "./inspect";
 import { getGraphQLErrorOptions, resolveFieldDef } from "./compat";

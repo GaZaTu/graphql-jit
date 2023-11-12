@@ -6,8 +6,8 @@ import {
   isListType,
   isNonNullType,
   isObjectType
-} from "graphql";
-import { isAbstractType } from "graphql/type";
+} from "@gazatu/graphql";
+import { isAbstractType } from "@gazatu/graphql/type";
 import merge from "lodash.merge";
 import { collectFields, collectSubfields, resolveFieldDef } from "./ast";
 import { getOperationRootType } from "./compat";

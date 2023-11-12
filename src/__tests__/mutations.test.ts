@@ -8,7 +8,7 @@ import {
   GraphQLObjectType,
   GraphQLSchema,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isCompiledQuery } from "../index";
 
 class NumberHolder {

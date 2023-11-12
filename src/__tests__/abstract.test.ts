@@ -12,7 +12,7 @@ import {
   GraphQLString,
   GraphQLUnionType,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isCompiledQuery } from "../index";
 
 function graphql(schema: GraphQLSchema, query: string) {

@@ -7,7 +7,7 @@ import {
   GraphQLString,
   Kind,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery } from "../index";
 import SpyInstance = jest.SpyInstance;
 

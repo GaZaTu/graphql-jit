@@ -1,5 +1,5 @@
 import { CompiledQuery, compileQuery, isCompiledQuery } from "../../../";
-import { GraphQLSchema, validate, parse, GraphQLError } from "graphql";
+import { GraphQLSchema, validate, parse, GraphQLError } from "@gazatu/graphql";
 import { createHash } from "crypto";
 
 class ValidationError extends Error {

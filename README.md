@@ -78,10 +78,10 @@ const query = `
   hello
 }
 `;
-const { parse } = require("graphql");
+const { parse } = require("@gazatu/graphql");
 const document = parse(query);
 
-const { compileQuery, isCompiledQuery } = require("graphql-jit");
+const { compileQuery, isCompiledQuery } = require("@gazatu/graphql-jit");
 const compiledQuery = compileQuery(schema, document);
 // check if the compilation is successful
 

@@ -12,7 +12,7 @@ import {
   isNonNullType,
   isObjectType,
   isScalarType
-} from "graphql";
+} from "@gazatu/graphql";
 import {
   BooleanSchema,
   IntegerSchema,

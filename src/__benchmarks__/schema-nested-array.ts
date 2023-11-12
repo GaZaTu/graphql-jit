@@ -8,7 +8,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 
 const articlesCount = 25;
 const badgesCount = 25;

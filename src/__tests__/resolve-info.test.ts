@@ -1,4 +1,4 @@
-import { DocumentNode, GraphQLSchema, parse, validate } from "graphql";
+import { DocumentNode, GraphQLSchema, parse, validate } from "@gazatu/graphql";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import { compileQuery, isCompiledQuery } from "../execution";
 import { fieldExpansionEnricher } from "../resolve-info";

@@ -19,7 +19,7 @@ import {
   IntrospectionQuery,
   parse,
   printSchema
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isCompiledQuery } from "../index";
 
 function executeQuery(schema: GraphQLSchema, document: DocumentNode) {

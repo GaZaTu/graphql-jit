@@ -8,7 +8,7 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
+} from "@gazatu/graphql";
 import { compileQuery, isPromise } from "../execution";
 
 function graphqlSync(args: {

@@ -8,8 +8,8 @@ import {
   GraphQLSchema,
   GraphQLString,
   parse
-} from "graphql";
-import { GraphQLFieldConfig } from "graphql/type/definition";
+} from "@gazatu/graphql";
+import { GraphQLFieldConfig } from "@gazatu/graphql/type/definition";
 import { compileQuery } from "../index";
 
 function executeQuery(

@@ -18,7 +18,7 @@ import {
   isUnionType,
   Kind,
   SelectionSetNode
-} from "graphql";
+} from "@gazatu/graphql";
 import memoize from "lodash.memoize";
 import mergeWith from "lodash.mergewith";
 import { memoize2, memoize4 } from "./memoize";

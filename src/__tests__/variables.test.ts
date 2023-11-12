@@ -18,10 +18,10 @@ import {
   GraphQLString,
   parse,
   versionInfo
-} from "graphql";
-import { GraphQLArgumentConfig } from "graphql/type/definition";
-import { compileQuery, isCompiledQuery } from "../index";
-import createInspect from "../inspect";
+} from "@gazatu/graphql"
+import { GraphQLArgumentConfig } from "@gazatu/graphql/type/definition"
+import { compileQuery, isCompiledQuery } from "../index"
+import createInspect from "../inspect"
 
 const inspect = createInspect(10, 4);
 
@@ -593,24 +593,6 @@ describe("Execute: Handles inputs", () => {
               message:
                 'Variable "$input" got invalid value { a: "foo", b: "bar" }; ' +
                 "Field value.c of required type String! was not provided.",
-              locations: [{ line: 2, column: 16 }]
-            }
-          ]
-        });
-      });
-
-      test("errors on addition of unknown input field", async () => {
-        const params = {
-          input: { a: "foo", b: "bar", c: "baz", extra: "dog" }
-        };
-        const result = await executeQuery(doc, params);
-
-        expect(result).toMatchObject({
-          errors: [
-            {
-              message:
-                'Variable "$input" got invalid value { a: "foo", b: "bar", c: "baz", extra: "dog" }; ' +
-                'Field "extra" is not defined by type TestInputObject.',
               locations: [{ line: 2, column: 16 }]
             }
           ]
